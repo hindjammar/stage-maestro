@@ -1,0 +1,106 @@
+.banner{
+  background-image: url("https://i.pinimg.com/564x/fb/9d/26/fb9d26c552f97702faf9e784f9bd1515.jpg");
+  height: 100vh;
+  /* background-color: black; */
+  background-repeat: no-repeat;
+  background-size: cover; /* Ajuste la taille de l'image pour remplir complètement la section */
+  background-position: center;
+  /* display: flex;
+  align-items: center; */
+}
+  .banner .tagline{
+    font-weight: 900;
+    letter-spacing: 0.9px;
+    padding: 15px 15px;
+    background: linear-gradient(90.21deg,rgb(140, 187, 241));
+    border: 1px solid rgb(148, 148, 172);
+    font-size: 45px;
+    margin-top: 60px;
+    margin-right: 90px;
+    display: inline-block;
+    animation: pulse 2s infinite;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+  }
+  .tagline{
+    margin-bottom: 20px;
+  }
+  .white-bg {
+    background-color: white;
+    margin-top: 40px; /* Ajustez la marge comme nécessaire */
+  
+  }
+  .par{
+    margin-top: 25px;
+  }
+  
+  
+    
+ 
+
+
+  @keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+  /* .banner h1 {
+    font-size: 65px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    line-height: 1;
+    margin-bottom: 20px;
+    display: block;
+    margin-top: 30px;
+    margin-left: 35px;
+
+  } */
+  .banner p {
+    color: #000000;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    width: 96%;
+    margin-top: 4px;
+    margin-right: 15px;
+    font-family: 'Helvetica', sans-serif;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre portée douce */
+
+  }
+  .banner button {
+    color: #131212;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 30px;
+    letter-spacing: 0.8px;
+    display: flex;
+    align-items: center;
+    padding:  10px 5px;
+    margin-left: 35px;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out; /* Ajoute une transition douce */
+  }
+.link{
+    text-decoration: none;
+  }
+a{
+  text-decoration: none;
+}
+  
+  .banner button:hover {
+    background-color: #6d8196; /* Nouvelle couleur de fond au survol */
+}
+
+.btnH button{
+  background-color: aliceblue;
+}

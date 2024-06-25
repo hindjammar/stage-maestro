@@ -1,0 +1,218 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+
+ .logoo img {
+    width: 60px; 
+    height: auto; 
+}
+
+
+li{
+    list-style: none;
+}
+.logoo a{
+    color: rgb(250, 107, 126);
+    margin-top: 15px;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(252, 112, 112);
+    font-size: 1.3rem;
+}
+a:hover{
+    color:rgb(236, 132, 132);
+} */
+/* header{
+    position: relative;
+    padding: 0 2rem;
+}
+.navbar{
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logoo a{
+    font-size: 1.9rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif */
+
+} */
+/* .navbar .logoo a:hover{
+    color: black;
+}
+.navbar .links{
+    display: flex;
+    gap: 2rem;
+    text-transform: capitalize;
+    margin-top: 14px;
+}
+
+.navbar .links a{
+    color: rgb(250, 104, 104);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.navbar .links a:hover{
+    color: rgb(63, 60, 61);
+}  */
+
+/* .navbar .toggle_btn{
+    color: rgb(250, 104, 104);
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+.action_btn{
+    background-color: rgb(247, 108, 126);
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+}
+.action_btn:hover{
+    scale: 1.05;
+    color:rgb(252, 131, 157);
+}
+.action_btn:active{
+    scale: 0.95;
+}
+
+.dropdown_menu{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background: rgba(228, 225, 225, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open{
+    height: 365px;
+}
+.dropdown_menu li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dropdown_menu li a{
+    color:rgb(250, 104, 104);
+}
+.dropdown_menu .action_btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+} */
+/*Responsive Design */
+
+/* @media (max-width: 992px) {
+    .navbar .links,
+    .navbar .action_btn {
+    display: none;
+    }
+    .navbar .toggle_btn{
+        display: block;
+    }
+    .dropdown_menu{
+        display: block;
+    }
+}
+
+@media (max-width: 576px) {
+   .dropdown_menu{
+    left: 2rem;
+    width: unset;
+   }
+} */
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffff;
+}
+
+.navbar .logoo {
+    font-size: 1.5em;
+    margin-left:30px;
+    color: rgb(247, 100, 100);
+    font-family: 'Garamond';
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+.navbar .links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 35px;
+    margin-top: 15px;
+
+}
+/* .navbar .links li{
+    display: flex;
+    justify-content: center;
+    margin-left:10px;
+} */
+
+.navbar .links li a {
+    text-decoration: none;
+    color: rgb(247, 100, 100);
+    font-family: Garamond;
+}
+.navbar .links li a:hover{
+    color: black;
+}
+
+/* Bouton de bascule pour les petits écrans */
+.toggle-btn {
+    display: none; /* Masqué par défaut */
+    font-size: 1.5em;
+    cursor: pointer;
+    padding: 10px;
+}
+
+/* Disposition pour les écrans de moins de 768px */
+@media (max-width: 767px) {
+    .navbar {
+        flex-direction: row; /* Conserve le logo à gauche et le bouton à droite */
+        justify-content: space-between;    }
+
+    .navbar .links {
+        display: none; /* Masquer les liens par défaut */
+        flex-direction: column;
+        width: 100%;
+        padding: 10px;
+        background-color: #f0f0f0;
+    }
+
+    .navbar .toggle-btn {
+        display: block; /* Afficher le bouton de bascule */
+    }
+
+    .navbar .links.active {
+        display: block; /* Afficher les liens lorsque 'active' */
+    }
+}

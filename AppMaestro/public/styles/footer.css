@@ -1,0 +1,29 @@
+footer {
+    text-align: center;
+    background-color: rgb(252, 86, 86);
+    color: black;
+    padding: 20px 0;
+}
+
+footer h1 {
+    margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer img {
+    display: inline-block;
+    margin: 0 10px;
+    width: 20px;    
+}
+
+footer span {
+    display: block;
+    margin: 10px 0;
+}
+
+footer p {
+    margin: 10px 0 0;
+    font-weight: bold;
+    font-size: large;
+    color: black;
+}

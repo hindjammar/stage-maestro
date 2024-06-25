@@ -6,7 +6,20 @@
 <head>
     <title>Détails du Véhicule</title>
     <script src="https://cdn.tailwindcss.com"></script>
-
+    <style>
+  table {
+    width: 100%; /* Définit la largeur du tableau à 100% */
+    border-collapse: collapse; /* Fusionne les bordures des cellules pour un aspect plus net */
+  }
+  th, td {
+    padding: 10px; /* Ajoute un padding de 10 pixels autour des cellules */
+    text-align: left; /* Alignement du texte à gauche dans toutes les cellules */
+    border: 1px solid #dddddd; /* Bordure de 1 pixel solide de couleur grise */
+  }
+  th {
+    background-color: #f2f2f2; /* Couleur de fond gris clair pour les en-têtes de colonne */
+  }
+</style>
     <!-- Ajoutez des liens vers vos feuilles de style ou d'autres ressources -->
 </head>
 </html>
@@ -48,18 +61,29 @@
     <div>
       <p class="text-base leading-4 mt-7 text-gray-600 dark:text-gray-300">Reference: {{ $reference}}</p>
       <p class="text-base leading-4 mt-4 text-gray-600 dark:text-gray-300">Year: {{ $annee}} </p>
-      <p class="text-base leading-4 mt-4 text-gray-600 dark:text-gray-300">Composants de references: 
+      <p class="text-base leading-4 mt-4 text-gray-600 dark:text-gray-300" style="font-weight:bold;">Composants de references: 
       @if(count($components) > 0)
-
-      <ul>
-        @foreach($components as $component)
-            <li>{{ $component->name }} - {{ $component->quantity }} - {{$component->unit}}</li>
-        @endforeach
-    </ul>
-    @else
-    <p>Aucun composant trouvé pour cette référence.</p>
+  <table style="margin-top:10px;">
+    <thead>
+      <tr>
+        <th>Nom</th>
+        <th>Quantité</th>
+        <th>Unité</th>
+      </tr>
+    </thead>
+    <tbody>
+      @foreach($components as $component)
+        <tr>
+          <td>{{ $component->name }}</td>
+          <td>{{ $component->quantity }}</td>
+          <td>{{ $component->unit }}</td>
+        </tr>
+      @endforeach
+    </tbody>
+  </table>
+@else
+  <p>Aucun composant trouvé pour cette référence.</p>
 @endif
-      </p>
     </div>
     <!-- <div>
       <div class="border-t border-b py-4 mt-7 border-gray-200">

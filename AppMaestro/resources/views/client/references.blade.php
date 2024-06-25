@@ -35,6 +35,7 @@
                 @foreach($references as $reference)
 <div class="flex flex-col relative">
     <div class="relative">
+
         <img class="h-8 w-8 mx-auto rounded-md" src="{{ $reference->imagereference }}">
         <div class="tooltip hidden absolute bg-gray-800 text-white text-center p-2 rounded-lg">
             {{ $reference->reference }}

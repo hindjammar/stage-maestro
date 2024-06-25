@@ -175,3 +175,7 @@ Route::post('/send-email', [ContactController::class, 'sendEmail'])->name('send.
 
 
 // Route for fetching models based on selected brand
+
+Route::get('/test-image', function () {
+    return '<img src="/storage/imagereference/1714994601a5a9a8.png" alt="Test Image">';
+});

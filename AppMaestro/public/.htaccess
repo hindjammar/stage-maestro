@@ -4,7 +4,10 @@
     </IfModule>
 
     RewriteEngine On
-
+    
+    # Serve resources from the storage folder
+    RewriteRule ^storage/(.*)$ /path/to/your/laravel/project/storage/app/public/$1 [L]
+    
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
     RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]

@@ -1,7 +1,20 @@
 @include('nav')
 
     
-
+<style>
+  table {
+    width: 100%; /* Définit la largeur du tableau à 100% */
+    border-collapse: collapse; /* Fusionne les bordures des cellules pour un aspect plus net */
+  }
+  th, td {
+    padding: 10px; /* Ajoute un padding de 10 pixels autour des cellules */
+    text-align: left; /* Alignement du texte à gauche dans toutes les cellules */
+    border: 1px solid #dddddd; /* Bordure de 1 pixel solide de couleur grise */
+  }
+  th {
+    background-color: #f2f2f2; /* Couleur de fond gris clair pour les en-têtes de colonne */
+  }
+</style>
 <!-- decr -->
 
 <head>
@@ -276,18 +289,26 @@ $(document).ready(function() {
         </div>
 
         <div class="cable-config">
-          <span>Composants</span>
+          <span style="font-weight:bold;">Composants:</span>
 
-          <ul class="list-disc list-inside">
-          @foreach($references->components as $component)
-
-            <li style="">
-            Nom : {{ $component->name }},
-            Quantité : {{ $component->quantity }},
-            Unité : {{ $component->unit }}
-            </li>
-            @endforeach
-          </ul>
+          <table style="margin-top:20px;">
+  <thead>
+    <tr>
+      <th>Nom</th>
+      <th>Quantité</th>
+      <th>Unité</th>
+    </tr>
+  </thead>
+  <tbody>
+    @foreach($references->components as $component)
+    <tr>
+      <td>{{ $component->name }}</td>
+      <td>{{ $component->quantity }}</td>
+      <td>{{ $component->unit }}</td>
+    </tr>
+    @endforeach
+  </tbody>
+</table>
         </div>
  
       </div>

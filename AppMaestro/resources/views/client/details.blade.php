@@ -16,6 +16,7 @@
   }
 </style>
 <!-- decr -->
+<link rel="icon" type="image/png" href="{{ asset('images/maes.png') }}"> 
 
 <head>
 <script>

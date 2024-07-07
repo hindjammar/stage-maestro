@@ -4,6 +4,8 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <link rel="icon" type="image/png" href="{{ asset('images/maes.png') }}"> 
+
     <title>Détails du Véhicule</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>

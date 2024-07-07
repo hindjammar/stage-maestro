@@ -1,5 +1,7 @@
 <head>
 <meta name="csrf-token" content="{{ csrf_token() }}">
+<link rel="icon" type="image/png" href="{{ asset('images/maes.png') }}"> 
+
 </head>
 
 <body class="relative bg-yellow-50 overflow-hidden max-h-screen">
